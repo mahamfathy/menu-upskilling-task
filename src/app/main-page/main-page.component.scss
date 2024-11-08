@@ -14,12 +14,13 @@
       width: 56%;
       color: $color-white;
       h1 {
-        font-family: "Inter", sans-serif;
         font-size: 74px;
         font-weight: 800;
         line-height: 89.03px;
-
         text-transform: uppercase;
+      }
+      p {
+        font-family: "poppins", sans-serif;
       }
     }
   }
