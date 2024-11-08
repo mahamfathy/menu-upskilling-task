@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+
+  .col1 {
+    width: calc(100% / 3 * 2);
+  }
+  .col2 {
+    width: calc(100% / 3);
+  }
+}
