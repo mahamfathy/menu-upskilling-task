@@ -1,10 +1,59 @@
+@import "../../assets/sass/abstract/variables";
+@import "../../assets/sass/components/button";
 .row {
   display: flex;
+  width: 100%;
+  color: $color-white;
+  position: relative;
 
   .col1 {
-    width: calc(100% / 3 * 2);
+    width: 63.793%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: $color-primary-bg;
+
+    .text-wrapper {
+      width: 45%;
+      position: absolute;
+      height: max-content;
+      top: 90px;
+      left: 352px;
+      h2 {
+        width: min-content;
+        margin: 0;
+        font-family: Sen;
+        font-size: 144px;
+        font-weight: 800;
+        line-height: 138.24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        height: 276px;
+        text-transform: uppercase;
+      }
+      p {
+        font-family: Poppins;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 552px;
+        margin-bottom: 2rem;
+      }
+      button {
+        bottom: 0;
+      }
+    }
+    img {
+      position: absolute;
+      right: 248px;
+    }
   }
   .col2 {
-    width: calc(100% / 3);
+    width: calc(100% - 63.793%);
   }
 }
