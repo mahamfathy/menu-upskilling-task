@@ -20,7 +20,13 @@
         text-transform: uppercase;
       }
       p {
-        font-family: "poppins", sans-serif;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
       }
     }
   }
