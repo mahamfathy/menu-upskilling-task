@@ -3,12 +3,15 @@
 html,
 body {
   box-sizing: border-box;
-  height: 100%;
-  width: 100%;
 }
 html,
 body {
+  width: 118.94rem;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+}
+.row {
+  height: 100vh;
 }

@@ -1,10 +1,32 @@
+@import "../../assets/sass/abstract/variables";
 .row {
   display: flex;
-
+  width: 100%;
   .col1 {
-    width: calc(100% / 3 * 2);
+    width: 63.793%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: $color-primary-bg;
+    .text-wrapper {
+      width: 56%;
+      color: $color-white;
+      h1 {
+        font-family: "Inter", sans-serif;
+        font-size: 74px;
+        font-weight: 800;
+        line-height: 89.03px;
+
+        text-transform: uppercase;
+      }
+    }
   }
   .col2 {
-    width: calc(100% / 3);
+    width: calc(100% - 63.793%);
+    background-image: url(../../assets/img/Mask\ Group.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
