@@ -58,6 +58,36 @@
         margin-bottom: 2rem;
       }
     }
+    h5 {
+      position: absolute;
+      height: 26px;
+      top: 794px;
+      left: 469px;
+      margin: 0;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      span {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.15em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 196px;
+        height: 26px;
+        top: 794px;
+        left: 586px;
+        gap: 0px;
+        opacity: 0px;
+      }
+    }
   }
   .col2 {
     width: calc(100% - 63.793%);
