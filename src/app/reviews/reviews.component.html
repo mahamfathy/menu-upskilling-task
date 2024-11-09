@@ -3,14 +3,18 @@
     <div class="row-wrapper">
       <h2>testymonials</h2>
       <div class="review-wrapper">
+        @for ( review of reviews ;track review) {
+
         <div class="card">
-          <div class="review-name"></div>
-          <div class="review"></div>
-          <div class="review-rating"></div>
+          <div class="review-name">{{ review.name }}</div>
+          <div class="review">{{ review.review }}</div>
+          <div class="review-rating">
+            <img src="{{ review.ratingImage }}" alt="" />
+          </div>
         </div>
+        }
       </div>
       <button class="btn">contact us</button>
     </div>
-    <img src="../../assets/img/chief.png" alt="" />
   </div>
 </div>
