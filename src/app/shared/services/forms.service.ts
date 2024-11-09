@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FormsService {
-  form!: FormGroup;
-  constructor() {}
-  createContactForm(form: FormBuilder) {
-    return form.group({
-      email: ['', [Validators.email, Validators.required]],
+  constructor(private formBuilder: FormBuilder) {}
+  createContactUsForm(): any {
+    return this.formBuilder.group({
       name: ['', Validators.required],
+      email: ['', [Validators.email, Validators.required]],
       phone: ['', Validators.required],
     });
   }
