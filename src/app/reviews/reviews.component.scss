@@ -1,5 +1,6 @@
 @import "../../assets/sass/abstract/variables";
 @import "../../assets/sass/components/button";
+@import "../../assets/sass/base/utilities";
 .container {
   width: 100%;
   color: $color-white;
@@ -9,14 +10,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5rem;
-  display: flex;
-  justify-content: center;
   .row {
     width: 72rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     h2 {
       margin: 0;
       font-family: Sen;
