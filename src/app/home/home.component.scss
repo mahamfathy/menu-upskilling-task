@@ -1,8 +1,21 @@
+@import "../../assets/sass/abstract/variables";
 .container {
   display: flex;
   flex-direction: column;
   height: 100%;
   section {
     height: 840px;
+  }
+  .reviews-section {
+    height: 898px;
+  }
+  .contact-us-section {
+    height: 30.78rem;
+    margin-bottom: 2rem;
+  }
+  footer {
+    width: 1903px;
+    height: 117px;
+    background-color: $color-brown;
   }
 }
