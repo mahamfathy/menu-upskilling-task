@@ -1,17 +1,24 @@
 @import "../../assets/sass/abstract/variables";
 @import "../../assets/sass/base/typography";
+@import "../../assets/sass/components/button";
+
 .row {
-  margin-top: 6rem;
+  margin-top: 5rem;
+  height: 66%;
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-evenly;
+    height: 100%;
+    h2 {
+      margin: 0;
+    }
     .form-wrapper {
       display: flex;
       width: 31.63%;
       height: 14.78rem;
+      justify-content: space-between;
       .col1 {
         width: 57%;
         height: inherit;
@@ -20,7 +27,9 @@
           flex-direction: column;
           height: inherit;
           justify-content: space-between;
+          align-items: center;
           .form-group {
+            width: 100%;
             position: relative;
             display: flex;
             align-items: center;
@@ -42,6 +51,41 @@
               border: none;
               background-color: $color-input;
             }
+          }
+        }
+        .btn {
+          background-color: unset;
+          border: 1px solid $color-primary-bg;
+          color: $color-black;
+          font-size: 14px;
+          width: 9.34rem;
+          height: 56px;
+          &:hover,
+          &:focus {
+            background-color: $color-primary-bg;
+            color: $color-white;
+          }
+        }
+      }
+      .col2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 46%;
+        margin-top: 2rem;
+        .email,
+        .phone {
+          display: flex;
+          align-items: center;
+          column-gap: 1rem;
+          label {
+            font-family: Abel;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.84px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
           }
         }
       }
