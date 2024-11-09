@@ -1,4 +1,16 @@
 @import "../../assets/sass/base/typography";
 @import "../../assets/sass/base/utilities";
-
 @import "../../assets/sass/components/button";
+.container {
+  .row {
+    .cards-wrapper {
+      flex-direction: row;
+      .card {
+        width: 385px;
+        height: 504px;
+        border-radius: 30px;
+        border: 1px solid $card-color-bg;
+      }
+    }
+  }
+}

@@ -1,9 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IMeal } from '../interfaces/IMeal';
+import { FirebaseService } from './firebase.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MealsService {
+  constructor(private firebaseService: FirebaseService) {}
 
-  constructor() { }
+  getMeals(): Observable<Array<IMeal>> {
+    return this.firebaseService.getRequest();
+  }
 }
