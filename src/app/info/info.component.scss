@@ -1,7 +1,10 @@
 @import "../../assets/sass/abstract/variables";
+@import "../../assets/sass/components/button";
+@import "../../assets/sass/base/typography";
+@import "../../assets/sass/base/utilities";
 .row {
   display: flex;
-
+  position: relative;
   .col1 {
     width: calc(100% / 3);
     background-image: url(../../assets/img/mask-group3.png);
@@ -25,5 +28,25 @@
   }
   .col2 {
     width: calc(100% / 3 * 2);
+    background-color: $color-primary-bg;
+    justify-content: unset;
+    h2 {
+      width: 50%;
+      text-align: right;
+      margin: 2rem 0 0;
+    }
+    .images-wrapper {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      display: flex;
+      width: 85%;
+      justify-content: space-evenly;
+    }
+    .btn {
+      position: absolute;
+      bottom: 52px;
+      left: 50%;
+    }
   }
 }

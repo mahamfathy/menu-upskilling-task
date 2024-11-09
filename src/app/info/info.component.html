@@ -5,11 +5,14 @@
       Lorem Ipsum has been the industry's standard dummy text ever since the
     </p>
   </div>
-  <div class="col2">
-    <div class="text-wrapper">
-      <h1>Tasty pastries</h1>
+  <div class="col2 u-center-div">
+    <h2 class="heading-white">How we work</h2>
+    <div class="images-wrapper">
+      @for (image of images ;track image) {
+      <img [src]="image" [alt]="foodTitle" />
 
-      <button class="btn">See more</button>
+      }
     </div>
+    <button class="btn">contact us</button>
   </div>
 </div>
