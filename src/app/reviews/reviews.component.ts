@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IReview } from '../shared/IReview';
+import { IReview } from '../shared/interfaces/IReview';
 import { SharedModule } from '../shared/shared.module';
 
 @Component({
