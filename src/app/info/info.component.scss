@@ -1,10 +1,29 @@
+@import "../../assets/sass/abstract/variables";
 .row {
   display: flex;
 
   .col1 {
-    width: calc(100% / 3 * 2);
+    width: calc(100% / 3);
+    background-image: url(../../assets/img/mask-group3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-primary-bg;
+    position: relative;
+    p {
+      width: 43.68%;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      position: absolute;
+      right: 7%;
+      top: 18%;
+    }
   }
   .col2 {
-    width: calc(100% / 3);
+    width: calc(100% / 3 * 2);
   }
 }
