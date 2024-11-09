@@ -5,6 +5,7 @@
   display: flex;
   width: 100%;
   color: $color-white;
+  position: relative;
   .col1 {
     position: relative;
     width: 63.793%;
@@ -97,5 +98,28 @@
     background-image: url(../../assets/img/Mask\ Group.png);
     background-size: cover;
     background-repeat: no-repeat;
+    .ingredient {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 23rem;
+      height: 25rem;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #f2a850 0%,
+        rgba(228, 166, 92, 0) 100%
+      );
+
+      overflow: hidden;
+      position: absolute;
+      top: 57%;
+      left: 58%;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      position: absolute;
+      top: 57%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
