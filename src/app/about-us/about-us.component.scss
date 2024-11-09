@@ -1,5 +1,6 @@
 @import "../../assets/sass/abstract/variables";
 @import "../../assets/sass/components/button";
+@import "../../assets/sass/base/typography";
 .row {
   display: flex;
   width: 100%;
@@ -19,20 +20,11 @@
       width: 45%;
       position: absolute;
       height: max-content;
-      top: 90px;
+      top: 29px;
       left: 352px;
       h2 {
         width: min-content;
         margin: 0;
-        font-family: Sen;
-        font-size: 144px;
-        font-weight: 800;
-        line-height: 138.24px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        height: 276px;
-        text-transform: uppercase;
       }
       p {
         font-family: Poppins;
