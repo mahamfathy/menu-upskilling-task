@@ -10,6 +10,6 @@ export class FirebaseService {
   constructor(private http: HttpClient) {}
 
   getRequest(): Observable<any> {
-    return this.http.get(`${firebaseRestApi}.json`);
+    return this.http.get(firebaseRestApi);
   }
 }

@@ -1,11 +1,15 @@
 <div class="container u-center-div">
-  <div class="row">
+  <div class="row u-center-div">
     <h2 class="heading-orange">Recipes</h2>
     <div class="cards-wrapper u-center-div">
-      @for ( meal of meals ;track meal.idMeal) {
+      @for ( meal of meals ;track meal) {
 
-      <div class="card">
-        <img [src]="meal.strMealThumb" [alt]="meal.strMeal" />
+      <div class="card border-radios-30">
+        <img
+          class="border-radios-30"
+          [src]="meal.strMealThumb"
+          [alt]="meal.strMeal"
+        />
         <h4 class="meal-name">{{ meal.strMeal }}</h4>
         <p class="description">
           Lorem Ipsum is simply dummy text of the printing and typesetting

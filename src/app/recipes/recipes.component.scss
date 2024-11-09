@@ -2,14 +2,19 @@
 @import "../../assets/sass/base/utilities";
 @import "../../assets/sass/components/button";
 .container {
+  height: fit-content;
   .row {
     .cards-wrapper {
       flex-direction: row;
+      flex-wrap: wrap;
       .card {
         width: 385px;
         height: 504px;
-        border-radius: 30px;
         border: 1px solid $card-color-bg;
+        img {
+          width: 100%;
+          height: 56.78%;
+        }
       }
     }
   }

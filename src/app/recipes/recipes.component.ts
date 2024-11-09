@@ -14,6 +14,9 @@ export class RecipesComponent implements OnInit {
 
   constructor(private mealsService: MealsService) {}
   ngOnInit(): void {
-    this.mealsService.getMeals().subscribe((meal) => (this.meals = meal));
+    this.mealsService
+      .getMeals()
+      .subscribe((meal: Array<IMeal>) => (this.meals = meal));
+    console.log('Meals data:', this.meals);
   }
 }
