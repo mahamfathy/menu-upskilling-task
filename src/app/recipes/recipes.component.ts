@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IMeal } from '../shared/interfaces/IMeal';
+import { MealsService } from '../shared/services/meals.service';
 
 @Component({
   selector: 'app-recipes',
@@ -8,6 +9,11 @@ import { IMeal } from '../shared/interfaces/IMeal';
   templateUrl: './recipes.component.html',
   styleUrl: './recipes.component.scss',
 })
-export class RecipesComponent {
+export class RecipesComponent implements OnInit {
   meals!: Array<IMeal>;
+
+  constructor(private mealsService: MealsService) {}
+  ngOnInit(): void {
+    this.mealsService.getMeals().subscribe((meal) => (this.meals = meal));
+  }
 }
