@@ -1,0 +1,66 @@
+@import "../../assets/sass/abstract/variables";
+@import "../../assets/sass/components/button";
+.container {
+  width: 100%;
+  color: $color-white;
+  position: relative;
+  background-color: $color-primary-bg;
+  background-image: url(../../assets/img/Mask-Group2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  .row {
+    width: 72rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      margin: 0;
+      font-family: Sen;
+      font-size: 144px;
+      font-weight: 800;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .review-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 3rem;
+      column-gap: 3rem;
+      width: 100%;
+      justify-content: center;
+      .card {
+        color: $color-primary-bg;
+        background-color: $color-white;
+        border-radius: 35px;
+        padding: 0 2rem;
+        width: 39.51%;
+        height: 10.667rem;
+        .review-name {
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 900;
+          line-height: 24px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+        }
+        .review {
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: $color-grey;
+        }
+      }
+    }
+  }
+}
