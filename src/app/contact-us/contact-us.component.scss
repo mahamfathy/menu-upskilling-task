@@ -1,0 +1,57 @@
+@import "../../assets/sass/abstract/variables";
+
+.row {
+  margin-top: 6rem;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 144px;
+      font-weight: 800;
+      line-height: 138.24px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    .form-wrapper {
+      display: flex;
+      width: 31.63%;
+      height: 14.78rem;
+      .col1 {
+        width: 57%;
+        height: inherit;
+        .form {
+          display: flex;
+          flex-direction: column;
+          height: inherit;
+          justify-content: space-between;
+          .form-group {
+            position: relative;
+            display: flex;
+            align-items: center;
+            label {
+              position: absolute;
+              left: 1rem;
+              color: $color-brown;
+              font-size: 14px;
+              font-weight: 800;
+              line-height: 16.84px;
+              text-align: left;
+              text-underline-position: from-font;
+              text-decoration-skip-ink: none;
+            }
+            input {
+              width: 97%;
+              height: 3.12rem;
+              border-radius: 61px;
+              border: none;
+              background-color: $color-input;
+            }
+          }
+        }
+      }
+    }
+  }
+}
