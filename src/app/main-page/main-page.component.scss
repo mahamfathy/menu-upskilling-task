@@ -28,12 +28,10 @@
       text-transform: uppercase;
     }
     .text-wrapper {
-      width: 56%;
       position: absolute;
       width: 621px;
-      height: 89px;
-      top: 288px;
-      left: 352px;
+      left: 100px;
+      top: 27%;
       h1 {
         margin: 0;
         font-family: "sen";
@@ -118,8 +116,8 @@
     }
     img {
       position: absolute;
-      top: 57%;
-      transform: translate(-50%, -50%);
+      top: 54%;
+      transform: translate(-38%, -51%);
     }
   }
 }

@@ -13,11 +13,10 @@
     background-color: $color-primary-bg;
 
     .text-wrapper {
-      width: 45%;
       position: absolute;
       height: max-content;
       top: 29px;
-      left: 352px;
+      left: 200px;
       h2 {
         width: min-content;
         margin: 0;
@@ -29,7 +28,7 @@
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-        width: 552px;
+        width: 45%;
         margin-bottom: 2rem;
       }
       button {
@@ -38,7 +37,9 @@
     }
     img {
       position: absolute;
-      right: 248px;
+      right: 50px;
+      width: 41%;
+      top: 16%;
     }
   }
   .col2 {

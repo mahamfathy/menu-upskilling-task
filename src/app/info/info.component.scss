@@ -6,14 +6,14 @@
   display: flex;
   position: relative;
   .col1 {
-    width: calc(100% / 3);
+    width: 42%;
     background-image: url(../../assets/img/mask-group3.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: $color-primary-bg;
     position: relative;
     p {
-      width: 43.68%;
+      width: 45.8%;
       font-family: Poppins;
       font-size: 18px;
       font-weight: 600;
@@ -27,21 +27,25 @@
     }
   }
   .col2 {
-    width: calc(100% / 3 * 2);
+    width: calc(100% - 42%);
     background-color: $color-primary-bg;
     justify-content: unset;
     h2 {
-      width: 50%;
+      width: 67%;
       text-align: right;
+      font-size: 120px;
       margin: 2rem 0 0;
     }
     .images-wrapper {
       position: absolute;
       top: 49%;
-      left: 2.2%;
+      left: 0;
       display: flex;
-      width: 85%;
+      width: 94%;
       justify-content: space-evenly;
+      img {
+        width: 20%;
+      }
     }
     .btn {
       position: absolute;

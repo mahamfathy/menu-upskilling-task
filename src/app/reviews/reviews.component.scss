@@ -1,6 +1,8 @@
 @import "../../assets/sass/abstract/variables";
 @import "../../assets/sass/components/button";
 @import "../../assets/sass/base/utilities";
+@import "../../assets/sass/abstract/mixins";
+@import "../../assets/sass/base/typography";
 .container {
   width: 100%;
   color: $color-white;
@@ -11,16 +13,8 @@
   background-repeat: no-repeat;
   padding: 3.8rem;
   .row {
-    width: 72rem;
     h2 {
       margin: 0;
-      font-family: Sen;
-      font-size: 144px;
-      font-weight: 800;
-      text-align: left;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
-      text-transform: uppercase;
       margin-bottom: 2rem;
     }
 
