@@ -1,6 +1,7 @@
 @import "../../assets/sass/abstract/variables";
 @import "../../assets/sass/components/button";
 @import "../../assets/sass/base/typography";
+@import "../../assets/sass/abstract/mixins";
 .row {
   display: flex;
   width: 100%;
@@ -17,6 +18,9 @@
       height: max-content;
       top: 29px;
       left: 200px;
+      @include respond(big-desktop) {
+        width: 27%;
+      }
       h2 {
         width: min-content;
         margin: 0;
@@ -28,7 +32,6 @@
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-        width: 45%;
         margin-bottom: 2rem;
       }
       button {
@@ -40,6 +43,11 @@
       right: 50px;
       width: 41%;
       top: 16%;
+      @include respond(big-desktop) {
+        right: 128px;
+        width: 37%;
+        top: 9%;
+      }
     }
   }
   .col2 {

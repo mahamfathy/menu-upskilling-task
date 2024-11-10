@@ -13,7 +13,7 @@
     color: $color-primary-bg;
     position: relative;
     p {
-      width: 45.8%;
+      width: 42.8%;
       font-family: Poppins;
       font-size: 18px;
       font-weight: 600;
@@ -35,6 +35,9 @@
       text-align: right;
       font-size: 120px;
       margin: 2rem 0 0;
+      @include respond(big-desktop) {
+        font-size: 144px;
+      }
     }
     .images-wrapper {
       position: absolute;
@@ -43,8 +46,15 @@
       display: flex;
       width: 94%;
       justify-content: space-evenly;
+      @include respond(big-desktop) {
+        width: 96%;
+        top: 48%;
+      }
       img {
         width: 20%;
+        @include respond(big-desktop) {
+          width: 17%;
+        }
       }
     }
     .btn {
