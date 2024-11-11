@@ -1,16 +1,26 @@
 @import "../../assets/sass/abstract/variables";
+@import "../../assets/sass/abstract/mixins";
 .container {
   display: flex;
   flex-direction: column;
   height: 100%;
   section {
     height: 840px;
+    @include respond(tab-land) {
+      height: 550px;
+    }
+    @include respond(tab-port) {
+      height: 520px;
+    }
   }
   .recipes-section {
     height: fit-content;
   }
   .reviews-section {
     height: 898px;
+    @include respond(tab-port) {
+      height: 520px;
+    }
   }
   .contact-us-section {
     height: 30.78rem;
@@ -20,5 +30,8 @@
     width: 100%;
     height: 117px;
     background-color: $color-brown;
+    @include respond(tab-port) {
+      height: 5rem;
+    }
   }
 }

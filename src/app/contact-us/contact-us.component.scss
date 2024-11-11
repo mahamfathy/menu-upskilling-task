@@ -11,8 +11,17 @@
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
+    @include respond(tab-port) {
+      height: 92%;
+    }
     h2 {
       margin: 0;
+      @include respond(tab-land) {
+        font-size: 88px;
+      }
+      @include respond(tab-port) {
+        font-size: 64px;
+      }
     }
     .form-wrapper {
       display: flex;
@@ -21,6 +30,13 @@
       justify-content: space-between;
       @include respond(big-desktop) {
         width: 40%;
+      }
+      @include respond(tab-land) {
+        width: 60%;
+      }
+      @include respond(tab-port) {
+        height: 11rem;
+        width: 67%;
       }
       .col1 {
         width: 57%;
@@ -47,7 +63,10 @@
               font-weight: 800;
               color: $color-brown;
               font-family: sen;
-
+              @include respond(tab-port) {
+                height: 2rem;
+                width: 80%;
+              }
               &::placeholder {
                 font-family: sen;
                 color: $color-brown;
@@ -81,6 +100,10 @@
           font-size: 14px;
           width: 9.34rem;
           height: 56px;
+          @include respond(tab-port) {
+            width: 5rem;
+            height: 2rem;
+          }
           &:hover,
           &:focus {
             background-color: $color-primary-bg;

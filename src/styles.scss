@@ -14,6 +14,9 @@ body {
   font-family: "Sen", sans-serif;
   font-size: 18px;
   @include respond(big-desktop);
+  @include respond(tab-land);
+  @include respond(tab-port);
+  @include respond(phone);
 }
 .row {
   height: 100%;

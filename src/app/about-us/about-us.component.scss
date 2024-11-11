@@ -17,13 +17,17 @@
       position: absolute;
       height: max-content;
       top: 29px;
-      left: 200px;
+      left: 14%;
+      width: 37%;
       @include respond(big-desktop) {
         width: 27%;
       }
       h2 {
         width: min-content;
         margin: 0;
+        @include respond(tab-land) {
+          font-size: 75px;
+        }
       }
       p {
         font-family: Poppins;
@@ -33,9 +37,26 @@
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         margin-bottom: 2rem;
+        @include respond(tab-land) {
+          font-size: small;
+          line-height: 1rem;
+          margin-bottom: 1rem;
+        }
+        @include respond(tab-port) {
+          font-size: x-small;
+          line-height: 0.9rem;
+        }
       }
       button {
         bottom: 0;
+        @include respond(tab-land) {
+          width: 45%;
+          height: 2.5rem;
+        }
+        @include respond(tab-port) {
+          width: fit-content;
+          height: 2rem;
+        }
       }
     }
     img {
@@ -47,6 +68,10 @@
         right: 128px;
         width: 37%;
         top: 9%;
+      }
+      @include respond(tab-port) {
+        top: 21%;
+        right: 3%;
       }
     }
   }

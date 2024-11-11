@@ -12,6 +12,9 @@
     background-size: cover;
     color: $color-primary-bg;
     position: relative;
+    @include respond(tab-land) {
+      background-size: cover;
+    }
     p {
       width: 42.8%;
       font-family: Poppins;
@@ -24,6 +27,14 @@
       position: absolute;
       right: 7%;
       top: 18%;
+      @include respond(tab-land) {
+        width: 64.8%;
+        top: 10%;
+      }
+      @include respond(tab-port) {
+        font-size: small;
+        line-height: 1.1rem;
+      }
     }
   }
   .col2 {
@@ -38,6 +49,14 @@
       @include respond(big-desktop) {
         font-size: 144px;
       }
+      @include respond(tab-land) {
+        width: 80%;
+        font-size: 88px;
+      }
+      @include respond(tab-port) {
+        width: 65%;
+        font-size: 50px;
+      }
     }
     .images-wrapper {
       position: absolute;
@@ -50,17 +69,30 @@
         width: 96%;
         top: 48%;
       }
+      @include respond(tab-land) {
+        width: 93%;
+      }
       img {
         width: 20%;
         @include respond(big-desktop) {
           width: 17%;
         }
+        @include respond(tab-land) {
+          width: 15%;
+        }
+        @include respond(tab-port) {
+          width: 20%;
+        }
       }
     }
     .btn {
       position: absolute;
-      bottom: 52px;
+      bottom: 7%;
       left: 50%;
+      @include respond(tab-port) {
+        width: 25%;
+        height: 2.5rem;
+      }
     }
   }
 }
