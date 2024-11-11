@@ -1,0 +1,11 @@
+@import "../../sass/abstract/mixins";
+@import "../../sass/abstract/variables";
+
+.heading-orange {
+  @include heading;
+  color: $color-primary-bg;
+}
+.heading-white {
+  @include heading;
+  color: $color-white;
+}
