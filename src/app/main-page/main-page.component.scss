@@ -185,7 +185,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 23rem;
+      width: 21rem;
       height: 25rem;
       background: radial-gradient(
         50% 50% at 50% 50%,
@@ -194,10 +194,10 @@
       );
       overflow: hidden;
       position: absolute;
-      top: 57%;
+      top: 54%;
       left: 58%;
       transform: translate(-50%, -50%);
-
+      animation: float 3s infinite ease-in-out;
       @include respond(big-desktop) {
         top: 46%;
         left: 54%;
@@ -221,8 +221,9 @@
     }
     img {
       position: absolute;
-      top: 54%;
+      top: 50%;
       transform: translate(-38%, -51%);
+      animation: float 3s infinite ease-in-out;
       @include respond(tab-land) {
         width: 33%;
         top: 50%;
@@ -233,5 +234,16 @@
         right: -35px;
       }
     }
+  }
+}
+@keyframes float {
+  0% {
+    transform: translate(-38%, -51%) translateY(0);
+  }
+  50% {
+    transform: translate(-38%, -51%) translateY(-10px);
+  }
+  100% {
+    transform: translate(-38%, -51%) translateY(0);
   }
 }
