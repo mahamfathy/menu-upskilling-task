@@ -35,6 +35,11 @@
         top: 5%;
         left: 40%;
       }
+      @include respond(phone) {
+        line-height: 1rem;
+        font-size: small;
+        width: 35%;
+      }
     }
     .text-wrapper {
       position: absolute;
@@ -51,6 +56,9 @@
       @include respond(tab-port) {
         top: 33%;
         left: 9%;
+      }
+      @include respond(phone) {
+        top: 24%;
       }
       h1 {
         margin: 0;
@@ -84,6 +92,9 @@
           font-size: small;
           line-height: 19px;
         }
+        @include respond(phone) {
+          font-size: x-small;
+        }
       }
       .btn {
         @include respond(tab-land) {
@@ -95,6 +106,9 @@
           width: 25%;
           height: 1.5rem;
           font-size: 11px;
+        }
+        @include respond(phone) {
+          width: 50%;
         }
       }
     }
@@ -154,6 +168,10 @@
     background-image: url(../../assets/img/Mask\ Group.png);
     background-size: cover;
     background-repeat: no-repeat;
+    @include respond(phone) {
+      background-image: unset;
+      background-color: $color-primary-bg;
+    }
     .ingredient {
       display: flex;
       align-items: center;
@@ -187,6 +205,10 @@
         top: 52%;
         left: 60%;
       }
+      @include respond(phone) {
+        top: 35%;
+        left: 69%;
+      }
     }
     img {
       position: absolute;
@@ -195,6 +217,11 @@
       @include respond(tab-land) {
         width: 33%;
         top: 50%;
+      }
+      @include respond(phone) {
+        width: 35%;
+        top: 37%;
+        right: -26px;
       }
     }
   }

@@ -25,6 +25,9 @@
   .contact-us-section {
     height: 30.78rem;
     margin-bottom: 2rem;
+    @include respond(phone) {
+      height: 850px;
+    }
   }
   footer {
     width: 100%;

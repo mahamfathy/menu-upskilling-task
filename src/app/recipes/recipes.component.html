@@ -2,7 +2,7 @@
   <div class="row u-center-div">
     <h2 class="heading-orange">Recipes</h2>
     <div class="cards-wrapper u-center-div">
-      @for ( meal of meals ;track meal) {
+      @defer (on viewport) { @for ( meal of meals ;track meal) {
 
       <div class="card border-radios-30">
         <img
@@ -20,8 +20,13 @@
           </p>
         </div>
       </div>
+      } }@placeholder {
+      <h2>Please wait till loading the recipes...</h2>
+      }@loading {
+      <h2>hey wait!</h2>
       }
     </div>
+
     <button class="btn">contact us</button>
   </div>
 </div>

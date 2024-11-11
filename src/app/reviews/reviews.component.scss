@@ -25,6 +25,9 @@
       @include respond(tab-port) {
         font-size: 64px;
       }
+      @include respond(phone) {
+        font-size: xx-large;
+      }
     }
 
     .review-wrapper {
@@ -42,6 +45,9 @@
         row-gap: 1rem;
         column-gap: 1rem;
       }
+      @include respond(phone) {
+        padding: 0;
+      }
       .card {
         color: $color-primary-bg;
         background-color: $color-white;
@@ -49,6 +55,9 @@
         padding: 0 2rem;
         width: 42.51%;
         height: 10.667rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         @include respond(big-desktop) {
           width: 36.51%;
         }
@@ -58,7 +67,11 @@
         @include respond(tab-port) {
           padding: 0 0.5rem;
         }
+        @include respond(phone) {
+          width: 100%;
+        }
         .review-name {
+          margin: 0;
           font-family: Poppins;
           font-size: 16px;
           font-weight: 900;
@@ -66,11 +79,8 @@
           text-align: left;
           text-underline-position: from-font;
           text-decoration-skip-ink: none;
-          @include respond(tab-land) {
-            margin: 0.75rem;
-          }
-          @include respond(tab-port) {
-            margin: 0.5rem 0 0 0.5rem;
+          @include respond(phone) {
+            font-size: x-small;
           }
         }
         .review {
@@ -82,11 +92,21 @@
           text-underline-position: from-font;
           text-decoration-skip-ink: none;
           color: $color-grey;
+          margin: 0;
           @include respond(tab-land) {
             font-size: small;
             line-height: 1rem;
-            margin: 0 0 0.5rem;
           }
+          @include respond(phone) {
+            font-size: small;
+            line-height: 0.8rem;
+          }
+        }
+      }
+      .btn {
+        @include respond(phone) {
+          width: fit-content;
+          height: 2.2rem;
         }
       }
     }

@@ -21,3 +21,8 @@ body {
 .row {
   height: 100%;
 }
+.app-container {
+  @include respond(phone) {
+    overflow-x: hidden;
+  }
+}

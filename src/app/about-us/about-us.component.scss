@@ -12,7 +12,9 @@
     width: 63.793%;
     height: 100%;
     background-color: $color-primary-bg;
-
+    @include respond(phone) {
+      width: 100%;
+    }
     .text-wrapper {
       position: absolute;
       height: max-content;
@@ -22,11 +24,20 @@
       @include respond(big-desktop) {
         width: 27%;
       }
+      @include respond(phone) {
+        width: 100%;
+        padding: 3rem;
+        left: 0;
+      }
       h2 {
         width: min-content;
         margin: 0;
         @include respond(tab-land) {
           font-size: 75px;
+        }
+        @include respond(phone) {
+          font-size: xxx-large;
+          width: fit-content;
         }
       }
       p {
@@ -73,9 +84,15 @@
         top: 21%;
         right: 3%;
       }
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
   .col2 {
     width: calc(100% - 63.793%);
+    @include respond(phone) {
+      display: none;
+    }
   }
 }

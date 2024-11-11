@@ -14,6 +14,10 @@
     @include respond(tab-port) {
       height: 92%;
     }
+    @include respond(phone) {
+      height: 91%;
+      justify-content: end;
+    }
     h2 {
       margin: 0;
       @include respond(tab-land) {
@@ -21,6 +25,9 @@
       }
       @include respond(tab-port) {
         font-size: 64px;
+      }
+      @include respond(phone) {
+        font-size: xxx-large;
       }
     }
     .form-wrapper {
@@ -38,9 +45,18 @@
         height: 11rem;
         width: 67%;
       }
+      @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+        width: 71%;
+        height: fit-content;
+      }
       .col1 {
         width: 57%;
         height: inherit;
+        @include respond(phone) {
+          height: 9rem;
+        }
         .form {
           display: flex;
           flex-direction: column;
@@ -67,6 +83,9 @@
                 height: 2rem;
                 width: 80%;
               }
+              @include respond(phone) {
+                width: 100%;
+              }
               &::placeholder {
                 font-family: sen;
                 color: $color-brown;
@@ -76,6 +95,9 @@
                 text-align: left;
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
+                @include respond(phone) {
+                  font-size: x-small;
+                }
               }
               &:focus {
                 outline: none;
