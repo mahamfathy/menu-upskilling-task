@@ -7,7 +7,7 @@ import { SharedModule } from '../shared/shared.module';
   standalone: true,
   imports: [SharedModule],
   templateUrl: './reviews.component.html',
-  styleUrl: './reviews.component.scss',
+  styleUrls: ['./reviews.component.scss'],
 })
 export class ReviewsComponent {
   reviews: IReview[] = [
@@ -15,25 +15,25 @@ export class ReviewsComponent {
       name: 'Kathryn Murphy',
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
-      ratingImage: '../../../../assets/img/stars.png',
+      ratingImage: 'assets/img/stars.png',
     },
     {
       name: 'Kathryn Murphy',
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
-      ratingImage: '../../../../assets/img/stars.png',
+      ratingImage: 'assets/img/stars.png',
     },
     {
       name: 'Kathryn Murphy',
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
-      ratingImage: '../../../../assets/img/stars.png',
+      ratingImage: 'assets/img/stars.png',
     },
     {
       name: 'Kathryn Murphy',
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
-      ratingImage: '../../../../assets/img/stars.png',
+      ratingImage: 'assets/img/stars.png',
     },
   ];
 }

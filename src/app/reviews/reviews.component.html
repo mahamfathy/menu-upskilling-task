@@ -8,7 +8,7 @@
         <h4 class="review-name">{{ review.name }}</h4>
         <p class="review">{{ review.review }}</p>
         <div class="review-rating">
-          <img src="{{ review.ratingImage }}" alt="" />
+          <img [src]="review.ratingImage" alt="" />
         </div>
       </div>
       }

@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent {
-  imagePath: string = '../../assets/img/bread.png';
+  imagePath: string = 'assets/img/bread.png';
 }

@@ -6,14 +6,14 @@ import { SharedModule } from '../shared/shared.module';
   standalone: true,
   imports: [SharedModule],
   templateUrl: './info.component.html',
-  styleUrl: './info.component.scss',
+  styleUrls: ['./info.component.scss'],
 })
 export class InfoComponent {
   foodTitle: string = 'bread';
-  images: Array<any> = [
-    '../../assets/img/image1.png',
-    '../../assets/img/image2.png',
-    '../../assets/img/image3.png',
-    '../../assets/img/image4.png',
+  images: string[] = [
+    'assets/img/image1.png',
+    'assets/img/image2.png',
+    'assets/img/image3.png',
+    'assets/img/image4.png',
   ];
 }

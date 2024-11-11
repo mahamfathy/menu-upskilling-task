@@ -37,7 +37,7 @@
       }
       @include respond(phone) {
         line-height: 1rem;
-        font-size: small;
+        font-size: xx-small;
         width: 35%;
       }
     }
@@ -74,6 +74,9 @@
           font-size: larger;
           line-height: unset;
         }
+        @include respond(phone) {
+          font-size: large;
+        }
       }
       p {
         font-family: Poppins;
@@ -93,7 +96,7 @@
           line-height: 19px;
         }
         @include respond(phone) {
-          font-size: x-small;
+          font-size: xx-small;
         }
       }
       .btn {
@@ -155,6 +158,9 @@
         height: 24%;
         background-size: cover;
         padding: 0.5rem;
+      }
+      @include respond(phone) {
+        width: 100%;
       }
       img {
         @include respond(tab-port) {
@@ -219,9 +225,9 @@
         top: 50%;
       }
       @include respond(phone) {
-        width: 35%;
+        width: 40%;
         top: 37%;
-        right: -26px;
+        right: -35px;
       }
     }
   }

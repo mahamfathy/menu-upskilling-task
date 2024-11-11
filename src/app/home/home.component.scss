@@ -21,12 +21,15 @@
     @include respond(tab-port) {
       height: 520px;
     }
+    @include respond(phone) {
+      height: fit-content;
+    }
   }
   .contact-us-section {
     height: 30.78rem;
     margin-bottom: 2rem;
     @include respond(phone) {
-      height: 850px;
+      height: fit-content;
     }
   }
   footer {
