@@ -38,6 +38,8 @@
       @include respond(phone) {
         font-size: xx-small;
         line-height: 0.7rem;
+        top: 17%;
+        width: 66.8%;
       }
     }
   }
@@ -79,6 +81,9 @@
       }
       @include respond(tab-land) {
         width: 93%;
+      }
+      @include respond(phone) {
+        top: 57%;
       }
       img {
         width: 20%;

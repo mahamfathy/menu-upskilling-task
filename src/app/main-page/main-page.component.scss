@@ -36,9 +36,11 @@
         left: 40%;
       }
       @include respond(phone) {
-        line-height: 1rem;
+        line-height: 0.5rem;
         font-size: xx-small;
         width: 35%;
+        top: 3%;
+        left: 59%;
       }
     }
     .text-wrapper {
@@ -97,6 +99,7 @@
         }
         @include respond(phone) {
           font-size: xx-small;
+          line-height: 15px;
         }
       }
       .btn {
